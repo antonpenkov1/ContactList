@@ -16,6 +16,8 @@
 		D292361D2B2C71B100E2E0DF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292361C2B2C71B100E2E0DF /* DataStore.swift */; };
 		D292361F2B2C76C200E2E0DF /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D292361E2B2C76C200E2E0DF /* PersonsListViewController.swift */; };
 		D29236222B2C77BD00E2E0DF /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29236212B2C77BD00E2E0DF /* PersonDetailsViewController.swift */; };
+		D29236242B2C95E600E2E0DF /* PersonsSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29236232B2C95E600E2E0DF /* PersonsSectionsViewController.swift */; };
+		D29236262B2C96F500E2E0DF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29236252B2C96F500E2E0DF /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		D292361C2B2C71B100E2E0DF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		D292361E2B2C76C200E2E0DF /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
 		D29236212B2C77BD00E2E0DF /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		D29236232B2C95E600E2E0DF /* PersonsSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsSectionsViewController.swift; sourceTree = "<group>"; };
+		D29236252B2C96F500E2E0DF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			children = (
 				D292361E2B2C76C200E2E0DF /* PersonsListViewController.swift */,
 				D29236212B2C77BD00E2E0DF /* PersonDetailsViewController.swift */,
+				D29236232B2C95E600E2E0DF /* PersonsSectionsViewController.swift */,
+				D29236252B2C96F500E2E0DF /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +193,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D29236262B2C96F500E2E0DF /* TabBarViewController.swift in Sources */,
+				D29236242B2C95E600E2E0DF /* PersonsSectionsViewController.swift in Sources */,
 				D29236022B2C6EA400E2E0DF /* AppDelegate.swift in Sources */,
 				D292361F2B2C76C200E2E0DF /* PersonsListViewController.swift in Sources */,
 				D29236222B2C77BD00E2E0DF /* PersonDetailsViewController.swift in Sources */,
