@@ -11,7 +11,7 @@ struct Person {
     let phoneNumber: Int
     
     var email: String {
-        "\(firstName)\(lastName)@gmail.com"
+        "\(firstName.lowercased())_\(lastName.lowercased())@gmail.com"
     }
     
     var fullName: String {
@@ -19,17 +19,24 @@ struct Person {
     }
     
     static func getPersons() -> [Person] {
-        [
-            Person(firstName: "Sharon", lastName: "Robertson", phoneNumber: 74927292),
-            Person(firstName: "Ted", lastName: "Murphy", phoneNumber: 74927292),
-            Person(firstName: "Tim", lastName: "Pennyworth", phoneNumber: 74927292),
-            Person(firstName: "Allan", lastName: "Jankin", phoneNumber: 74927292),
-            Person(firstName: "Bruce", lastName: "Isaacson", phoneNumber: 74927292),
-            Person(firstName: "Carl", lastName: "Butler", phoneNumber: 74927292),
-            Person(firstName: "Nicola", lastName: "Black", phoneNumber: 74927292),
-            Person(firstName: "John", lastName: "Smith", phoneNumber: 74927292),
-            Person(firstName: "Aaron", lastName: "Williams", phoneNumber: 74927292),
-            Person(firstName: "Steven", lastName: "Dow", phoneNumber: 74927292),
-        ]
+        var persons: [Person] = []
+        let dataStore = DataStore()
+        
+        for _ in 1...dataStore.firstNames.count - 1 {
+            let newCount = dataStore.firstNames.count - 1
+            let firstName = dataStore.firstNames.remove(at: Int.random(in: 0...newCount))
+            let lastName = dataStore.lastNames.remove(at: Int.random(in: 0...newCount))
+            let phoneNumber = dataStore.phoneNumbers.remove(at: Int.random(in: 0...newCount))
+            
+            persons.append(
+                Person(
+                    firstName: firstName,
+                    lastName: lastName,
+                    phoneNumber: phoneNumber
+                )
+            )
+        }
+        
+        return persons
     }
 }

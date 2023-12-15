@@ -9,7 +9,7 @@ import Foundation
 
 class DataStore {
     
-    let firstNames = [
+    var firstNames = [
         "Sharon",
         "Ted",
         "Tim",
@@ -22,7 +22,7 @@ class DataStore {
         "Steven"
     ]
     
-    let lastNames = [
+    var lastNames = [
         "Robertson",
         "Murphy",
         "Pennyworth",
@@ -35,21 +35,6 @@ class DataStore {
         "Dow"
     ]
     
-    let phoneNumbers = (0...10).map { _ in Int.random(in: 1000000...9999999) }
-    
-    
-    func getPersons() -> [Person] {
-        [
-        Person(firstName: "Sharon", lastName: "Robertson", phoneNumber: 74927292),
-        Person(firstName: "Ted", lastName: "Murphy", phoneNumber: 74927292),
-        Person(firstName: "Tim", lastName: "Pennyworth", phoneNumber: 74927292),
-        Person(firstName: "Allan", lastName: "Jankin", phoneNumber: 74927292),
-        Person(firstName: "Bruce", lastName: "Isaacson", phoneNumber: 74927292),
-        Person(firstName: "Carl", lastName: "Butler", phoneNumber: 74927292),
-        Person(firstName: "Nicola", lastName: "Black", phoneNumber: 74927292),
-        Person(firstName: "John", lastName: "Smith", phoneNumber: 74927292),
-        Person(firstName: "Aaron", lastName: "Williams", phoneNumber: 74927292),
-        Person(firstName: "Steven", lastName: "Dow", phoneNumber: 74927292),
-        ]
-    }
+    var phoneNumbers = (0...10).map { _ in Int.random(in: 381000000000...381999999999) }
+
 }
