@@ -9,8 +9,7 @@ import UIKit
 
 class PersonsSectionsViewController: UITableViewController {
 
-//    var personsList: [Person]!
-    private let personsList = Person.getPersons()
+    var personsList: [Person]!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,7 +9,7 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
 
-    private let personsList = Person.getPersons()
+    var personsList: [Person]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +20,6 @@ class PersonsListViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let detailsVC = segue.destination as? PersonDetailsViewController
         detailsVC?.person = personsList[indexPath.row]
-        
-//        let sectionsVC = segue.destination as? PersonsSectionsViewController
-//        sectionsVC?.personsList = personsList
     }
 }
 
