@@ -56,5 +56,11 @@ extension PersonsSectionsViewController {
             return emailCell
         }
     }
-    
+}
+
+// MARK: - UITableViewDelegate
+extension PersonsSectionsViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
